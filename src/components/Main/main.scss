@@ -1,0 +1,129 @@
+.main{
+    width: 100%;
+
+    .secTitle{
+        .title{
+            position: relative;
+            width: max-content;
+            color: gray;
+            margin: 1rem 0;
+            z-index: 2;
+
+            &::after{
+                position: absolute;
+                content: "";
+                background:green;
+                height: 5px;
+                width: 120px;
+                right: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+    }
+    .secContent{
+        justify-content: center;
+        gap: 1.5rem;
+
+        .singleDestination{
+            height: 100%;
+            display: grid;
+            row-gap: 10px;
+            // padding: 1rem;
+            border-radius: 10px;
+            align-items: center;
+            background: rgb(247, 239, 239);
+            box-shadow: 0 2px 4px rgba(140,140,141,0.54);
+            overflow: hidden;
+
+            &:hover{
+                background: rgb(170, 162, 162);
+                box-shadow:1 4px 4px rgba(67, 101, 64, 0.549);
+                transition: .3s ease;
+            }
+
+            .imageDiv{
+                height: 180px;
+                width: 100%;
+                overflow: hidden;
+                
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 2s ease;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .cardInfo{
+                padding: 1rem;
+
+                .destTitle{
+                    color: black;
+                    font-size: 1.25rem;
+                }
+                .continent{
+                    font-size: 18px;
+                    color: black;
+                }
+                .name{
+                    color: gray;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+            .fees{
+                width: 100%;
+                justify-content: space-between;
+                padding: 1rem;
+                margin: 1rem 0;
+                border-bottom: 1.5px solid gray ;
+                border-top: 1.5px solid gray;
+                .grade{
+                    color: black;
+                    max-width: 100px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    small{
+                        text-align: center;
+                        background: green;
+                        border-radius: 1rem;
+                        color: white;
+                        padding: 1px 10px;
+                        font-size: 10px;
+                    }
+                }
+            }
+            .price{
+                font-size: 2rem;
+                color: black;
+
+            }
+            .desc{
+                font-size: 13.5px;
+                color: black;
+                font-weight: 500;
+
+            }
+            .btn{
+                margin-top: 1rem;
+                color: white;
+                font-weight: 600;
+                justify-content: space-between;
+                gap: .5rem;
+
+                .icon{
+                    align-self: center;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

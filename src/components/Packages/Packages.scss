@@ -1,0 +1,190 @@
+.packages{
+    padding: 2rem 0;
+    width: 100%;
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+
+    .packages-top{
+        background: white;
+        width: 100%;
+        margin-top: 40px;
+        padding: 10px;
+
+        .packages-content{
+            flex-direction: column;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .packages-one{
+                .icon{
+                    color: green;
+                    font-size: 15px;
+                }
+                small{
+                    color: gray;
+                    text-transform: capitalize;
+                    font-weight: 300;
+                    font-size: 11px;
+                }
+            }
+            .packages-two{
+                a{
+                    color: green;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .packages-center{
+        
+       background: whitesmoke;
+        height: auto;
+        width: 100%;
+
+        .packages-info{
+        position: absolute;
+        z-index: 100;
+        h1{
+        font-size: 12px;
+        text-align: center;
+        padding: 1rem 1rem 0 1rem;
+        color: white;
+        }
+        p{
+        font-size: 12px;
+        padding: 2rem;
+        color: gray;
+        font-weight: 400;
+
+        }
+
+        
+       
+        
+        }
+
+        .slider{
+            background: whitesmoke;
+        }
+    }
+
+    .packages-main{
+     margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 20px;
+        padding: 2rem;
+        
+
+
+       
+        .inputPackages{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        background: rgb(216, 213, 213);
+        padding-bottom: 2rem;
+        
+
+         .pmc-header{
+        font-size: 15px;
+        font-weight: 500;
+       padding-top: 1rem;
+        }
+        .inputPackage{
+        input{
+        width: 100%;
+        margin: .5rem 0 .5rem;
+        padding: .3rem;
+        }
+        .btn{
+        padding: .5rem;
+        font-size: 10px;
+        
+        .icon{
+        font-size: 10px;
+        }
+        
+        }
+        }
+      
+        
+       }
+    }
+
+
+@media screen and (min-width: 768px) {
+    .packages-center{
+        .packages-info{
+            h1{
+                font-size: 22px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .slider img{
+            height: 45vh;
+            object-fit: cover;
+        }
+    }
+}
+@media screen and (min-width: 1240px) {
+
+    .packages-center{
+        .packages-info{
+            h1{
+                font-size: 39px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        .slider img{
+            height: 40vh;
+            object-fit: cover;
+     
+        }
+    }
+
+  .packages-main{
+
+    
+    .inputPackages{
+        padding: 2rem 0;
+width: 50%;
+       .pmc-header{
+        font-size: 26px;
+        font-weight: 400;
+    }
+    .btn{
+        padding: .7rem;
+        font-size: 17px;
+        
+        .icon{
+        font-size: 19px;
+        }
+        
+        }
+   
+    
+
+  }
+}
+} 
+}
